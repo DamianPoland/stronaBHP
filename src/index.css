@@ -1,0 +1,152 @@
+/* basic */
+
+*,
+*:before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  /* colors */
+  --accent: 235, 187, 0;
+  /* #f5c500 */
+
+  --dark: 30, 30, 30;
+  /* #1e1e1e */
+
+
+  --bright: 230, 230, 230;
+
+}
+
+html,
+body {
+  font-size: 100%;
+  overflow-x: hidden;
+  color: black;
+
+  /* scrollbar ONLY for mozilla, scrollbar-width - "auto" or "thin"  */
+  scrollbar-width: thin;
+  scrollbar-color: green black;
+}
+
+/* custom scroll bar in body (mobile not work) */
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(var(--accent), 0.6);
+  border-radius: 999px;
+}
+
+
+
+
+/* ALL */
+
+.section__textContainer {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.section__id {
+  position: absolute;
+  top: -6rem;
+  left: 0;
+  right: 0;
+}
+
+.header {
+  background: rgba(var(--dark), 0.7);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.header__container {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.header__item {
+  color: white;
+  font-size: 1rem;
+  padding: 0.2rem 1rem;
+  text-decoration: none;
+}
+
+.text1 {
+  letter-spacing: 1.2px;
+  font-size: 1.5rem;
+  color: rgb(var(--accent));
+  font-family: "Kalam", cursive;
+  font-weight: 600;
+  /* text-shadow: 1px 1px rgba(0, 0, 0, 0.5); */
+}
+
+.text2 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-top: 1rem;
+  text-align: justify;
+  color: black;
+  font-weight: normal;
+}
+
+.text__white {
+  color: white;
+}
+
+.textDate {
+  font-size: 1rem;
+  font-weight: 600;
+  align-self: flex-end;
+}
+
+.line {
+  padding-top: 0.3rem;
+  background: rgb(var(--accent));
+  width: 5rem;
+}
+
+.btn {
+  background: transparent;
+  border: solid 0.2rem rgba(var(--accent), 0.6);
+  padding: 0.5rem 2rem;
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.btn:active {
+  background: rgba(var(--accent), 0.6);
+}
+
+.text__white {
+  color: white;
+}
+
+@media (min-width: 500px) {
+
+  .text1 {
+    font-size: 2.5rem;
+  }
+}
