@@ -1,20 +1,24 @@
 .background {
     background: white;
     color: black;
-    padding: 4rem 0 2rem 0;
+    padding-top: 4rem;
 }
 
-.container {
-    margin-top: 2rem;
+.figure__img {
+    height: 100%;
+    width: 100%;
 }
 
-.container1 {
-    position: relative;
-    background: white;
+
+/* section start */
+.start {
+    max-width: 600px;
+    margin: auto;
+    padding: 4rem 1rem;
 }
 
-.container2 {
-    position: relative;
 
-    background: rgb(240, 240, 240);
-}
+/* MEDIA */
+
+
+@media (min-width: 600px) {}

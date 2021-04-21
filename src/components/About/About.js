@@ -8,7 +8,10 @@ import team from '../../assets/team.jpg'
 import knowledge from '../../assets/knowledge.jpg'
 
 //photos images svg
-import { ReactComponent as Phone } from '../../assets/icons/phone.svg'
+import { ReactComponent as Elearn } from '../../assets/icons/elearn.svg'
+import { ReactComponent as Earn } from '../../assets/icons/earn.svg'
+import { ReactComponent as Certificate } from '../../assets/icons/certificate.svg'
+import { ReactComponent as Clients } from '../../assets/icons/clients.svg'
 
 
 
@@ -37,8 +40,7 @@ const About = () => {
                             <div className="textContainer">
                                 <h1 className="text1">Kim jesteśmy?</h1>
                                 <div className="line"></div>
-                                <p className="text2"><span className={style.text__bigLeter}>L</span>orem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsam perferendis consectetur sapiente? Eius nobis veritatis perferendis rerum, doloremque, veniam dolor ut laboriosam non, fugit sit magni dolorem delectus soluta necessitatibus voluptate. Reiciendis blanditiis neque veritatis soluta omnis impedit eaque minus consequuntur, explicabo voluptatum delectus quaerat debitis suscipit sequi facere</p>
-                                <p className="text2"><span className={style.text__bigLeter}>L</span>orem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsam perferendis consectetur sapiente? Eius nobis veritatis perferendis rerum, doloremque, veniam dolor ut laboriosam non, fugit sit magni dolorem delectus soluta necessitatibus voluptate. Reiciendis blanditiis neque veritatis soluta omnis impedit eaque minus consequuntur, explicabo voluptatum delectus quaerat debitis suscipit sequi facere</p>
+                                <p className="text2"><span className={style.text__bigLeter}>D</span>działamy w branży BHP już od kilkunastu lat. Zdobyliśmy doświadczenie dzięki <strong>współpracy z kilkudziesięcioma firmami</strong> z branży produkcynej, magazynowej, logistycznej, edukacyjnej czy administracyjno-biurowej. Dzięki <strong>kilkunastoletniej praktyce</strong> mamy ogromną wiedzę i praktyczne umiejętności.</p>
                             </div>
                         </div>
                     </div>
@@ -54,8 +56,8 @@ const About = () => {
                             <div className="textContainer text__white">
                                 <h1 className="text1">Dlaczego my?</h1>
                                 <div className="line"></div>
-                                <p className="text2 text__white"><span className={style.text__bigLeter}>L</span>orem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsam perferendis consectetur sapiente? Eius nobis veritatis perferendis rerum, doloremque, veniam dolor ut laboriosam non, fugit sit magni dolorem delectus soluta necessitatibus voluptate. Reiciendis blanditiis neque veritatis soluta omnis impedit eaque minus consequuntur, explicabo voluptatum delectus quaerat debitis suscipit sequi facere.</p>
-                                <p className="text2 text__white"><span className={style.text__bigLeter}>L</span>orem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsam perferendis consectetur sapiente? Eius nobis veritatis perferendis rerum, doloremque, veniam dolor ut laboriosam non, fugit sit magni dolorem delectus soluta necessitatibus voluptate. Reiciendis blanditiis neque veritatis soluta omnis impedit eaque minus consequuntur, explicabo voluptatum delectus quaerat debitis suscipit sequi facere.</p>
+                                <p className="text2 text__white"><span className={style.text__bigLeter}>O</span>rganizujemy <strong>e-szkolenia BHP</strong>, w postaci bloków tematycznych dostosowanych do potrzeb konkretnych firm.</p>
+
                             </div>
                         </div>
                     </div>
@@ -70,24 +72,24 @@ const About = () => {
             <section className={style.approach}>
                 <div className={style.approach__textContainer}>
                     <div data-aos="flip-left" className={style.approach__item}>
-                        <Phone />
-                        <h2 className={style.approach__h2}>Doświadczenie</h2>
-                        <p className={style.approach__p}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsam perferendis consectetur sapiente?</p>
+                        <Elearn />
+                        <h2 className={style.approach__h2}>E-szkolenia</h2>
+                        <p className={style.approach__p}>Oferujemy szkolenia stacjonarne, on-line i e-szkolenia. </p>
                     </div>
                     <div data-aos="flip-left" className={style.approach__item}>
-                        <Phone />
-                        <h2 className={style.approach__h2}>Szkolenia</h2>
-                        <p className={style.approach__p}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsam perferendis consectetur sapiente?</p>
-                    </div>
-                    <div data-aos="flip-left" className={style.approach__item}>
-                        <Phone />
-                        <h2 className={style.approach__h2}>Certyfikaty</h2>
-                        <p className={style.approach__p}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsam perferendis consectetur sapiente?</p>
-                    </div>
-                    <div data-aos="flip-left" className={style.approach__item}>
-                        <Phone />
+                        <Earn />
                         <h2 className={style.approach__h2}>Cena</h2>
-                        <p className={style.approach__p}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsam perferendis consectetur sapiente?</p>
+                        <p className={style.approach__p}>Dzielimy się wiedzą zwiazaną z BHP bezpłatnie. Oferujemy konkurencyjne ceny szkoleń.</p>
+                    </div>
+                    <div data-aos="flip-left" className={style.approach__item}>
+                        <Certificate />
+                        <h2 className={style.approach__h2}>Certyfikaty</h2>
+                        <p className={style.approach__p}>Posiadamy wmagane kursy i certyfikaty wymagane do wystawiania zaświaczeń i przeprowadzania szkoleń.</p>
+                    </div>
+                    <div data-aos="flip-left" className={style.approach__item}>
+                        <Clients />
+                        <h2 className={style.approach__h2}>Doświadczenie</h2>
+                        <p className={style.approach__p}>Kilkanaście lat na rynku. Wielu zadowolonych klientów, różne branże.</p>
                     </div>
                 </div>
             </section>

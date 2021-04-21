@@ -13,6 +13,9 @@ import home__news1 from '../../assets/home__news1.jpg'
 import home__news2 from '../../assets/home__news2.jpg'
 import home__contact from '../../assets/home__contact.png'
 
+// svg
+import { ReactComponent as Phone } from '../../assets/icons/phone.svg'
+
 
 const Home = () => {
 
@@ -54,7 +57,7 @@ const Home = () => {
                     <div className={style.about__textContainer}>
                         <h1 className="text1">Kim jesteśmy?</h1>
                         <div className="line"></div>
-                        <p className="text2">Mamy kilkunastoletnią praktykę dzięki współpracy z kilkudziesięcioma firmami z branży produkcynej, magazynowej, logistycznej, edukacyjnej czy administracyjno-biurowej.</p>
+                        <p className="text2">Zdobyliśmy doświadczenie dzięki <strong>współpracy z kilkudziesięcioma firmami</strong> z branży produkcynej, magazynowej, logistycznej, edukacyjnej czy administracyjno-biurowej. Dzięki <strong>kilkunastoletniej praktyce</strong> mamy ogromną wiedzę i praktyczne umiejętności.</p>
                         <div><Link to='/about' className="btn">Więcej o firmie</Link></div>
                     </div>
                 </div>
@@ -68,7 +71,7 @@ const Home = () => {
                         <div className={style.offer__textContainer}>
                             <h1 className="text1">Czym się zajmujemy?</h1>
                             <div className="line"></div>
-                            <p className="text2 text__white">Nasza firma, Sfera BHP świadczy usługi w zakresie bezpieczeństwa i higieny pracy, ochrony przeciwpożarowej i szkoleń w zakresie pierwszej pomocy.  W najbliższej przyszłości pojawią się e-szkolenia, w postaci bloków tematycznych dostosowanych do potrzeb konkretnych firm. Ich układ bazować będzie na uporządkowanym zestawieniu udostępnionych publicznie treści na naszej stronie.</p>
+                            <p className="text2 text__white">Organizujemy <strong>szkolenia BHP stacjonarne</strong> oraz <strong>on-line (e-szkolenia)</strong>. Świadczymy usługi w zakresie <strong>bezpieczeństwa i higieny pracy</strong>, ochrony przeciwpożarowej i szkoleń w zakresie pierwszej pomocy.</p>
                             <div><Link to='/offer' className="btn text__white">Pełna oferta</Link></div>
                         </div>
                     </div>
@@ -88,7 +91,7 @@ const Home = () => {
                     <div className={style.knowledge__textContainer}>
                         <h1 className="text1">Dlaczego jesteśmy wyjątkowi?</h1>
                         <div className="line"></div>
-                        <p className="text2">Postanowiliśmy stworzyć jedno miejsce, zawierające spektrum informacji, z wygodną nawigacją, aktualizowane według potrzeb. Bez zbędnych, nic nie wnoszących grafik i reklam. Naszym celem jest propagowanie wiedzy w wyżej wymienionych dziedzinach. Informacjami dzielimy się nieodpłatnie, na naszej stronie w części Baza wiedzy. Uważamy, że każdy powinien mieć wygodny dostęp do zasad i przepisów, które mogą chronić zdrowie i ratować życie. Z czasem pojawiać się będą kolejne specjalistyczne artykuły. W internecie można znaleźć wiele informacji na temat bhp, ppoż i pierwszej pomocy, jednak są one zazwyczaj nie usystematyzowane, często w postaci blogowej. Zapoznanie się z nimi nie pozwala odczuć, przyswojenia tematu w pełni. Szkolenia okresowe on-line są bardzo ogólne, w efekcie czego część materiału nie dotyczy szkolonych pracowników w zakresie czynników niebezpiecznych, z którymi mają kontakt, a potrzebna im wiedza nie jest przekazywana. Nawet e-szkolenia dla pracowników służby bhp, organizowane przez znane firmy, ograniczają się do podstawowych informacji.</p>
+                        <p className="text2"><strong>Bezpłatnie</strong> dzielimy się zdobytą wiedzą. Na naszym portalu znajdziesz <strong>specjalistyczną więdzę</strong> dotyczącą wszystkich dziedzin związanych z BHP. Nie musisz szukać informacji w innych miejscach! Tu znajdziesz <strong>wszystkie informacje dotyczące BHP</strong>. Przekazujemy wiedzę w wsposób przystępny, uporzadkowany i bezpłatny.</p>
                         <div><Link to='/knowledge' className="btn">Baza wiedzy</Link></div>
                     </div>
                 </div>
@@ -101,9 +104,9 @@ const Home = () => {
                         <img className={style.news__img} src={home__news1} alt="bhp" />
                     </figure>
                     <div data-aos="flip-left" className={style.news__textContainer}>
-                        <h1 className="text1">Chcesz być na bieżąco ze zmianami prawa?</h1>
+                        <h1 className="text1">Jak być na bieżąco z BHP?</h1>
                         <div className="line"></div>
-                        <p className="text2">Regularnie zamieszczamy nowe informacje, które pojawiają się w branży. Poza tym masz możliwość obserwować nas na Twitterze. Informujemy na nim o najnowszych aktach prawnych i datach ich wejścia w życie. Na naszym profilu na Facebooku będziemy regularnie informować o nowościach na stronie i ważniejszych aktualizacjach atykułów.</p>
+                        <p className="text2">Jesteśmy na bierząco i od razu <strong>informujemy o zmianach w prawie</strong> dotyczących BHP. Regularnie zamieszczamy nowe informacje, które pojawiają się w branży. Informujemy o <strong>najnowszych aktach prawnych</strong> i datach ich wejścia w życie. </p>
                         <div><Link to='/news' className="btn">Zobacz nowości</Link></div>
                     </div>
                     <figure className={style.news__figure2}>
@@ -117,10 +120,17 @@ const Home = () => {
             <section className={style.contact}>
                 <div className={style.contact__text}>
                     <div className={style.contact__textContainer}>
-                        <h1 className="text1">Jak możesz wspierać naszą misję?</h1>
+                        <h1 className="text1">Chcesz nawiązać współpracę?</h1>
                         <div className="line"></div>
-                        <p className="text2">Wiedzą na stronie dzielimy się nieodpłatnie. Możesz nam pomóc, korzystając ze szkoleń okresowych bhp, które wkrótce pojawią się na naszej platformie e-lerningowej. Finansowanie całego serwisu opierać się będzie na dochodzie z tych szkoleń. Nasza propozycja: Oddajemy ci całą wiedzę bezwarunkowo, a ty możesz nas wesprzeć, zamawiając obowiązkowe szkolenia u nas.</p>
-                        <div><Link to='/contact' className="btn">Zamów szkolenie</Link></div>
+                        <p className="text2">Nasz <strong>zespół fachowców</strong> chętnie odpowie na Twoje pytania. Jeśli potrzebujesz szkolenia stacjonarnego lub on-line zaoferujemy ci je w <strong>konkurencyjnej cenie</strong>. Zadzwoń i zapytaj o ofertę. To nic nie kosztuje.
+                            </p>
+
+                        <p className={style.contact__tel}>
+                            <a href='tel:+48100100100' className={style.contact__telIcon}>
+                                <Phone />
+                            </a> +48 100-100-100
+                            </p>
+                        <div><Link to='/contact' className="btn">Pozostałe formy kontaktu</Link></div>
                     </div>
                 </div>
                 <figure data-aos="fade-left" className={style.contact__figure}>

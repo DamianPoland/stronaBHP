@@ -7,7 +7,7 @@ import { ReactComponent as Phone } from '../../assets/icons/phone.svg'
 import { ReactComponent as Location } from '../../assets/icons/location.svg'
 import { ReactComponent as Email } from '../../assets/icons/email.svg'
 import { ReactComponent as Facebbok } from '../../assets/icons/facebook.svg'
-import { ReactComponent as Twitter } from '../../assets/icons/twitter.svg'
+// import { ReactComponent as Twitter } from '../../assets/icons/twitter.svg'
 
 
 const Footer = () => {
@@ -19,7 +19,7 @@ const Footer = () => {
 
                     <section className={style.desc__item}>
                         <p className={style.desc__title}>O FIRMIE</p>
-                        <p className={style.desc__text}>Sfera BHP świadczy usługi w zakresie<br />bezpieczeństwa i higieny pracy,<br />ochrony przeciwpożarowej i szkoleń<br />w zakresie pierwszej pomocy.</p>
+                        <p className={style.desc__text}>Organizujemy szkolenia BHP<br />stacjonarne oraz on-line<br />(e-szkolenia). Świadczymy usługi w<br />zakresie bezpieczeństwa i higieny<br />pracy, ochrony przeciwpożarowej i<br />szkoleń w zakresie pierwszej pomocy.</p>
                     </section>
 
                     <section className={style.desc__item}>
@@ -28,6 +28,7 @@ const Footer = () => {
                             <Link to='/home' className={style.desc__link}><i className={style.desc__arrow} />Strona główna</Link>
                             <Link to='/about' className={style.desc__link}><i className={style.desc__arrow} />O firmie</Link>
                             <Link to='/offer' className={style.desc__link}><i className={style.desc__arrow} />Oferta</Link>
+                            <Link to='/etraining' className={style.desc__link}><i className={style.desc__arrow} />E-szkolenia</Link>
                             <Link to='/knowledge' className={style.desc__link}><i className={style.desc__arrow} />Baza wiedzy</Link>
                             <Link to='/news' className={style.desc__link}><i className={style.desc__arrow} />Nowości</Link>
                             <Link to='/contact' className={style.desc__link}><i className={style.desc__arrow} />Kontakt</Link>
@@ -50,7 +51,7 @@ const Footer = () => {
                                 <p className={style.desc__contactItemText}>Mapa</p>
                             </a>
 
-                            <a href='mailto:biuro@sferabhp.pl?subject=Zapytanie' className={style.desc__contactItem}>
+                            <a href='mailto:biuro@stronabhp.pl?subject=Zapytanie' className={style.desc__contactItem}>
                                 <Email className={style.desc__contactItemSvg} />
                                 <p className={style.desc__contactItemText}>Email</p>
                             </a>
@@ -60,10 +61,10 @@ const Footer = () => {
                                 <p className={style.desc__contactItemText}>Facebbok</p>
                             </a>
 
-                            <a href='https://twitter.com/BHPsfera' target='_blank' rel="noopener noreferrer" className={style.desc__contactItem}>
+                            {/* <a href='https://twitter.com/BHPsfera' target='_blank' rel="noopener noreferrer" className={style.desc__contactItem}>
                                 <Twitter className={style.desc__contactItemSvg} />
                                 <p className={style.desc__contactItemText}>Twitter</p>
-                            </a>
+                            </a> */}
 
                         </div>
                     </section>

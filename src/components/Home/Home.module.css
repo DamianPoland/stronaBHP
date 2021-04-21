@@ -168,6 +168,7 @@
 }
 
 .knowledge__text {
+    max-width: 600px;
     flex: 1;
 }
 
@@ -247,6 +248,7 @@
 }
 
 .contact__text {
+    max-width: 600px;
     flex: 1;
 }
 
@@ -254,6 +256,53 @@
     flex: 1;
     display: flex;
     flex-direction: column;
+}
+
+.contact__tel {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    color: black;
+    font-weight: 300;
+    padding: 1rem 0 0 0;
+}
+
+.contact__telIcon {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: rgb(var(--accent));
+
+    /* animation */
+    animation: shake 2s cubic-bezier(.36, .07, .19, .97) infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+
+    2%,
+    98% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    4%,
+    96% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    6%,
+    94% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    8%,
+    92% {
+        transform: translate3d(4px, 0, 0);
+    }
 }
 
 .contact__figure {
@@ -298,7 +347,6 @@
     .news__figure2 {
         max-width: 500px;
         transform: translateY(-4rem);
-
     }
 }
 
@@ -342,6 +390,9 @@
     .contact {
         flex-direction: row;
         padding: 1rem 1rem 0 1rem;
+    }
 
+    .contact__tel {
+        font-size: 3rem;
     }
 }

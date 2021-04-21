@@ -10,7 +10,7 @@ import { ReactComponent as Phone } from '../../assets/icons/phone.svg'
 import { ReactComponent as Email } from '../../assets/icons/email.svg'
 import { ReactComponent as Location } from '../../assets/icons/location.svg'
 import { ReactComponent as Facebook } from '../../assets/icons/facebook.svg'
-import { ReactComponent as Twitter } from '../../assets/icons/twitter.svg'
+// import { ReactComponent as Twitter } from '../../assets/icons/twitter.svg'
 
 
 const Contact = () => {
@@ -51,10 +51,10 @@ const Contact = () => {
                             <p className={style.contentIcon}><Facebook /></p>
                             <p className={style.contentDesc}>@AplikacjeIStronyInternetowe</p>
                         </a>
-                        <a className={style.contentItem} href='https://twitter.com/BHPsfera' target='_blank' rel="noopener noreferrer">
+                        {/* <a className={style.contentItem} href='https://twitter.com/BHPsfera' target='_blank' rel="noopener noreferrer">
                             <p className={style.contentIcon}><Twitter /></p>
                             <p className={style.contentDesc}>@BHPsfera</p>
-                        </a>
+                        </a> */}
 
                     </section>
 

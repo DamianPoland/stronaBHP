@@ -11,6 +11,7 @@ import Nav from '../../components/Nav/Nav'
 import Home from '../../components/Home/Home'
 import About from '../../components/About/About'
 import Offer from '../../components/Offer/Offer'
+import Etraining from '../../components/Etraining/Etraining'
 import Knowledge from '../../components/Knowledge/Knowledge'
 import News from '../../components/News/News'
 import Contact from '../../components/Contact/Contact'
@@ -49,8 +50,9 @@ const App = () => {
       <Switch>
         <Route path='/home' render={props => <Home {...props} />} />
         <Route path='/about' render={props => <About {...props} />} />
-        <Route path='/knowledge' render={props => <Knowledge {...props} />} />
         <Route path='/offer' render={props => <Offer {...props} />} />
+        <Route path='/etraining' render={props => <Etraining {...props} />} />
+        <Route path='/knowledge' render={props => <Knowledge {...props} />} />
         <Route path='/news' render={props => <News {...props} />} />
         <Route path='/contact' render={props => <Contact {...props} />} />
         <Route path='/privacy-policy' component={PrivacyPolicy} />

@@ -1,15 +1,16 @@
 import React, { useEffect } from 'react'
-import style from './News.module.css'
+import style from './Etraining.module.css'
+
 
 // images
 import underConstruction from '../../assets/underConstruction.jpg'
 
 
-const News = () => {
+
+const Etraining = () => {
 
     // scroll to top when componene render
     useEffect(() => { window.scrollTo(0, 0) }, [])
-
 
 
     return (
@@ -25,4 +26,4 @@ const News = () => {
     )
 }
 
-export default News
+export default Etraining

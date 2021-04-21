@@ -21,7 +21,7 @@ const Nav = props => {
             <nav className={style.container}>
                 <Link to='/home' className={style.header}>
                     <img className={style.headerImg} src={logo} alt='logo' />
-                    <p className={style.headerDesc}>strona<span className={style.headerDesc1}>BHP</span></p>
+                    <p className={style.headerDesc}>Strona<span className={style.headerDesc1}>BHP</span></p>
                 </Link>
                 <ul onClick={() => setIsOpenMobileMenu(false)} className={`${style.list} ${styleMobileMenu}`}>
                     <li className={style.listItem}><NavLink to='/home' activeClassName={style.activeLink} className={style.listItemAnchor}>Strona główna</NavLink></li>

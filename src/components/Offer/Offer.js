@@ -1,7 +1,11 @@
 import React, { useEffect } from 'react'
 import style from './Offer.module.css'
+import { Link } from 'react-router-dom'
 
 
+
+// images
+import home__about from '../../assets/home__about.jpg'
 
 const Offer = () => {
 
@@ -13,54 +17,90 @@ const Offer = () => {
     return (
         <main className={style.background}>
 
-            {/* header */}
-            <header className="header">
-                <div className="header__container">
-                    <a href="#Szkolenia" className="header__item">Szkolenia BHP</a>
-                    <a href="#Obsługa" className="header__item">Obsługa BHP</a>
-                    <a href="#Dokumentacja" className="header__item">Dokumentacja</a>
+            <section className={style.container}>
+
+                <div className={style.item}>
+                    <figure className={style.item__figure}>
+                        <img className="img" src={home__about} alt="bhp" />
+                        <h1 className={style.item__header}>E-learning BHP</h1>
+                    </figure>
+                    <p className={style.item__text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsam perferendis consectetur sapiente? Eius nobis veritatis perferendis rerum, doloremque, veniam dolor ut laboriosam non, fugit sit magni dolorem delectus soluta necessitatibus voluptate. Reiciendis blanditiis neque veritatis soluta omnis impedit eaque minus consequuntur, explicabo voluptatum delectus quaerat debitis suscipit sequi facere</p>
+                    <p className={style.item__text}>Cena: 50zł/os</p>
+                    <div><Link to='/contact' className="btn">Zamów</Link></div>
                 </div>
-            </header>
 
-            <div className={style.container}>
+                <div className={style.item}>
+                    <figure className={style.item__figure}>
+                        <img className="img" src={home__about} alt="bhp" />
+                        <h1 className={style.item__header}>Szkolenie wstępne BHP</h1>
+                    </figure>
+                    <p className={style.item__text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsam perferendis consectetur sapiente? Eius nobis veritatis perferendis rerum, doloremque, veniam dolor ut laboriosam non, fugit sit magni dolorem delectus soluta necessitatibus voluptate. Reiciendis blanditiis neque veritatis soluta omnis impedit eaque minus consequuntur, explicabo voluptatum delectus quaerat debitis suscipit sequi facere</p>
+                    <p className={style.item__text}>Cena: 50zł/os</p>
+                    <div><Link to='/contact' className="btn">Zamów</Link></div>
+                </div>
 
-                {/* section*/}
-                <section className={style.container1}>
-                    <div id="Szkolenia" className="section__id"></div>
-                    <div className="section__textContainer">
-                        <h1 className="text1">Szkolenia BHP</h1>
-                        <div className="line"></div>
-                        <p className="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsam perferendis consectetur sapiente? Eius nobis veritatis perferendis rerum, doloremque, veniam dolor ut laboriosam non, fugit sit magni dolorem delectus soluta necessitatibus voluptate. Reiciendis blanditiis neque veritatis soluta omnis impedit eaque minus consequuntur, explicabo voluptatum delectus quaerat debitis suscipit sequi facere</p>
-                        <p className="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsam perferendis consectetur sapiente? Eius nobis veritatis perferendis rerum, doloremque, veniam dolor ut laboriosam non, fugit sit magni dolorem delectus soluta necessitatibus voluptate. Reiciendis blanditiis neque veritatis soluta omnis impedit eaque minus consequuntur, explicabo voluptatum delectus quaerat debitis suscipit sequi facere</p>
-                        <p className="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsam perferendis consectetur sapiente? Eius nobis veritatis perferendis rerum, doloremque, veniam dolor ut laboriosam non, fugit sit magni dolorem delectus soluta necessitatibus voluptate. Reiciendis blanditiis neque veritatis soluta omnis impedit eaque minus consequuntur, explicabo voluptatum delectus quaerat debitis suscipit sequi facere</p>
-                    </div>
-                </section>
+                <div className={style.item}>
+                    <figure className={style.item__figure}>
+                        <img className="img" src={home__about} alt="bhp" />
+                        <h1 className={style.item__header}>Szkolenie okresowe BHP</h1>
+                    </figure>
+                    <p className={style.item__text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsam perferendis consectetur sapiente? Eius nobis veritatis perferendis rerum, doloremque, veniam dolor ut laboriosam non, fugit sit magni dolorem delectus soluta necessitatibus voluptate. Reiciendis blanditiis neque veritatis soluta omnis impedit eaque minus consequuntur, explicabo voluptatum delectus quaerat debitis suscipit sequi facere</p>
+                    <p className={style.item__text}>Cena: 50zł/os</p>
+                    <div><Link to='/contact' className="btn">Zamów</Link></div>
+                </div>
+
+                <div className={style.item}>
+                    <figure className={style.item__figure}>
+                        <img className="img" src={home__about} alt="bhp" />
+                        <h1 className={style.item__header}>Obsługa BHP</h1>
+                    </figure>
+                    <p className={style.item__text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsam perferendis consectetur sapiente? Eius nobis veritatis perferendis rerum, doloremque, veniam dolor ut laboriosam non, fugit sit magni dolorem delectus soluta necessitatibus voluptate. Reiciendis blanditiis neque veritatis soluta omnis impedit eaque minus consequuntur, explicabo voluptatum delectus quaerat debitis suscipit sequi facere</p>
+                    <p className={style.item__text}>Cena: 50zł/os</p>
+                    <div><Link to='/contact' className="btn">Zamów</Link></div>
+                </div>
+
+                <div className={style.item}>
+                    <figure className={style.item__figure}>
+                        <img className="img" src={home__about} alt="bhp" />
+                        <h1 className={style.item__header}>Ocena ryzyka zawodowego</h1>
+                    </figure>
+                    <p className={style.item__text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsam perferendis consectetur sapiente? Eius nobis veritatis perferendis rerum, doloremque, veniam dolor ut laboriosam non, fugit sit magni dolorem delectus soluta necessitatibus voluptate. Reiciendis blanditiis neque veritatis soluta omnis impedit eaque minus consequuntur, explicabo voluptatum delectus quaerat debitis suscipit sequi facere</p>
+                    <p className={style.item__text}>Cena: 50zł/os</p>
+                    <div><Link to='/contact' className="btn">Zamów</Link></div>
+                </div>
+
+                <div className={style.item}>
+                    <figure className={style.item__figure}>
+                        <img className="img" src={home__about} alt="bhp" />
+                        <h1 className={style.item__header}>Dokumentacja powypadkowa</h1>
+                    </figure>
+                    <p className={style.item__text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsam perferendis consectetur sapiente? Eius nobis veritatis perferendis rerum, doloremque, veniam dolor ut laboriosam non, fugit sit magni dolorem delectus soluta necessitatibus voluptate. Reiciendis blanditiis neque veritatis soluta omnis impedit eaque minus consequuntur, explicabo voluptatum delectus quaerat debitis suscipit sequi facere</p>
+                    <p className={style.item__text}>Cena: 50zł/os</p>
+                    <div><Link to='/contact' className="btn">Zamów</Link></div>
+                </div>
+
+                <div className={style.item}>
+                    <figure className={style.item__figure}>
+                        <img className="img" src={home__about} alt="bhp" />
+                        <h1 className={style.item__header}>Instrukcje, znaki BPH i Ppoż</h1>
+                    </figure>
+                    <p className={style.item__text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsam perferendis consectetur sapiente? Eius nobis veritatis perferendis rerum, doloremque, veniam dolor ut laboriosam non, fugit sit magni dolorem delectus soluta necessitatibus voluptate. Reiciendis blanditiis neque veritatis soluta omnis impedit eaque minus consequuntur, explicabo voluptatum delectus quaerat debitis suscipit sequi facere</p>
+                    <p className={style.item__text}>Cena: 50zł/os</p>
+                    <div><Link to='/contact' className="btn">Zamów</Link></div>
+                </div>
+
+                <div className={style.item}>
+                    <figure className={style.item__figure}>
+                        <img className="img" src={home__about} alt="bhp" />
+                        <h1 className={style.item__header}>Audyt BHP</h1>
+                    </figure>
+                    <p className={style.item__text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsam perferendis consectetur sapiente? Eius nobis veritatis perferendis rerum, doloremque, veniam dolor ut laboriosam non, fugit sit magni dolorem delectus soluta necessitatibus voluptate. Reiciendis blanditiis neque veritatis soluta omnis impedit eaque minus consequuntur, explicabo voluptatum delectus quaerat debitis suscipit sequi facere</p>
+                    <p className={style.item__text}>Cena: 50zł/os</p>
+                    <div><Link to='/contact' className="btn">Zamów</Link></div>
+                </div>
 
 
-                {/* section*/}
-                <section className={style.container2}>
-                    <div id="Obsługa" className="section__id"></div>
-                    <div className="section__textContainer">
-                        <h1 className="text1">Obsługa BHP</h1>
-                        <div className="line"></div>
-                        <p className="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsam perferendis consectetur sapiente? Eius nobis veritatis perferendis rerum, doloremque, veniam dolor ut laboriosam non, fugit sit magni dolorem delectus soluta necessitatibus voluptate. Reiciendis blanditiis neque veritatis soluta omnis impedit eaque minus consequuntur, explicabo voluptatum delectus quaerat debitis suscipit sequi facere</p>
-                        <p className="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsam perferendis consectetur sapiente? Eius nobis veritatis perferendis rerum, doloremque, veniam dolor ut laboriosam non, fugit sit magni dolorem delectus soluta necessitatibus voluptate. Reiciendis blanditiis neque veritatis soluta omnis impedit eaque minus consequuntur, explicabo voluptatum delectus quaerat debitis suscipit sequi facere</p>
-                        <p className="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsam perferendis consectetur sapiente? Eius nobis veritatis perferendis rerum, doloremque, veniam dolor ut laboriosam non, fugit sit magni dolorem delectus soluta necessitatibus voluptate. Reiciendis blanditiis neque veritatis soluta omnis impedit eaque minus consequuntur, explicabo voluptatum delectus quaerat debitis suscipit sequi facere</p>
-                    </div>
-                </section>
-
-                {/* section*/}
-                <section className={style.container1}>
-                    <div id="Dokumentacja" className="section__id"></div>
-                    <div className="section__textContainer">
-                        <h1 className="text1">Dokumentacja powypadkowa</h1>
-                        <div className="line"></div>
-                        <p className="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsam perferendis consectetur sapiente? Eius nobis veritatis perferendis rerum, doloremque, veniam dolor ut laboriosam non, fugit sit magni dolorem delectus soluta necessitatibus voluptate. Reiciendis blanditiis neque veritatis soluta omnis impedit eaque minus consequuntur, explicabo voluptatum delectus quaerat debitis suscipit sequi facere</p>
-                        <p className="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsam perferendis consectetur sapiente? Eius nobis veritatis perferendis rerum, doloremque, veniam dolor ut laboriosam non, fugit sit magni dolorem delectus soluta necessitatibus voluptate. Reiciendis blanditiis neque veritatis soluta omnis impedit eaque minus consequuntur, explicabo voluptatum delectus quaerat debitis suscipit sequi facere</p>
-                        <p className="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ipsam perferendis consectetur sapiente? Eius nobis veritatis perferendis rerum, doloremque, veniam dolor ut laboriosam non, fugit sit magni dolorem delectus soluta necessitatibus voluptate. Reiciendis blanditiis neque veritatis soluta omnis impedit eaque minus consequuntur, explicabo voluptatum delectus quaerat debitis suscipit sequi facere</p>
-                    </div>
-                </section>
-            </div>
+            </section>
         </main >
     )
 }
