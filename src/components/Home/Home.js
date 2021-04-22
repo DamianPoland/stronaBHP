@@ -14,7 +14,12 @@ import home__news2 from '../../assets/home__news2.jpg'
 import home__contact from '../../assets/home__contact.png'
 
 // svg
+import { ReactComponent as Elearn } from '../../assets/icons/elearn.svg'
+import { ReactComponent as Earn } from '../../assets/icons/earn.svg'
+import { ReactComponent as Certificate } from '../../assets/icons/certificate.svg'
+import { ReactComponent as Clients } from '../../assets/icons/clients.svg'
 import { ReactComponent as Phone } from '../../assets/icons/phone.svg'
+
 
 
 const Home = () => {
@@ -44,6 +49,32 @@ const Home = () => {
 
                     </div>
 
+                </div>
+            </section>
+
+            {/* section APPROACH */}
+            <section className={style.approach}>
+                <div className={style.approach__textContainer}>
+                    <div data-aos="flip-left" className={style.approach__item}>
+                        <Elearn />
+                        <h2 className={style.approach__h2}>E-szkolenia</h2>
+                        <p className={style.approach__p}>Oferujemy szkolenia stacjonarne, on-line i e-szkolenia. </p>
+                    </div>
+                    <div data-aos="flip-left" className={style.approach__item}>
+                        <Earn />
+                        <h2 className={style.approach__h2}>Cena</h2>
+                        <p className={style.approach__p}>Dzielimy się wiedzą zwiazaną z BHP bezpłatnie. Oferujemy konkurencyjne ceny szkoleń.</p>
+                    </div>
+                    <div data-aos="flip-left" className={style.approach__item}>
+                        <Certificate />
+                        <h2 className={style.approach__h2}>Certyfikaty</h2>
+                        <p className={style.approach__p}>Posiadamy wmagane kursy i certyfikaty wymagane do wystawiania zaświaczeń i przeprowadzania szkoleń.</p>
+                    </div>
+                    <div data-aos="flip-left" className={style.approach__item}>
+                        <Clients />
+                        <h2 className={style.approach__h2}>Doświadczenie</h2>
+                        <p className={style.approach__p}>Kilkanaście lat na rynku. Wielu zadowolonych klientów, różne branże.</p>
+                    </div>
                 </div>
             </section>
 

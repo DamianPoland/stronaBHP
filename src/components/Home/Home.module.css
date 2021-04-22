@@ -82,6 +82,46 @@
     }
 }
 
+
+
+/* section APPROACH */
+
+.approach {
+    background: white;
+}
+
+.approach__textContainer {
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+    padding: 8rem 2rem 4rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+}
+
+.approach__item {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    background: linear-gradient(to right bottom, rgba(var(--accent), 0.8), rgba(255, 255, 255, 0.1));
+    border: 0.1rem rgb(var(--dark)) solid;
+}
+
+.approach__h2 {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.approach__p {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+
 /*section ABOUT*/
 
 .about {
@@ -161,7 +201,7 @@
     background: white;
     max-width: 1200px;
     margin: auto;
-    padding: 4rem 1rem;
+    padding: 8rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -192,13 +232,21 @@
 /*section NEWS*/
 
 .news {
-    background: rgb(var(--dark));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5)100%), url(../../assets/home_news_background.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+    .news {
+        background-attachment: scroll;
+    }
 }
 
 .news__container {
     max-width: 1200px;
     margin: auto;
-    padding: 2rem 1rem;
+    padding: 6rem 1rem;
     display: grid;
     grid-template-columns: 1fr;
     position: relative;
@@ -241,7 +289,7 @@
     background: white;
     max-width: 1200px;
     margin: auto;
-    padding: 4rem 1rem 0 1rem;
+    padding: 8rem 1rem 0 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -331,7 +379,7 @@
     }
 
     .news__container {
-        padding: 0 1rem;
+        padding: 4rem 1rem;
     }
 
     .news__textContainer {
@@ -350,6 +398,13 @@
     }
 }
 
+@media (min-width: 600px) {
+
+    .approach__textContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (min-width: 1000px) {
 
     .start__container {
@@ -364,6 +419,10 @@
     .start__text {
         font-size: 2rem;
         padding: 0.5rem;
+    }
+
+    .approach__textContainer {
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .about {

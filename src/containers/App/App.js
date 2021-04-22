@@ -20,6 +20,7 @@ import PrivacyPolicy from '../../components/PrivacyPolicy/PrivacyPolicy'
 import AlertPrivacy from '../../UI/AlertPrivacy/AlertPrivacy'
 
 
+
 const App = () => {
 
   // privacy policy permission
