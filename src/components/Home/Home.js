@@ -8,10 +8,11 @@ import home__start1 from '../../assets/home__start1.jpg'
 import home__start2 from '../../assets/home__start2.jpg'
 import home__about from '../../assets/home__about.jpg'
 import home__offer from '../../assets/home__offer.jpg'
+import home_etraining from '../../assets/home_etraining.png'
 import home__knowledge from '../../assets/home__knowledge.png'
 import home__news1 from '../../assets/home__news1.jpg'
 import home__news2 from '../../assets/home__news2.jpg'
-import home__contact from '../../assets/home__contact.png'
+import home__contact from '../../assets/home__contact.jpg'
 
 // svg
 import { ReactComponent as Elearn } from '../../assets/icons/elearn.svg'
@@ -88,8 +89,8 @@ const Home = () => {
                     <div className={style.about__textContainer}>
                         <h1 className="text1">Kim jesteśmy?</h1>
                         <div className="line"></div>
-                        <p className="text2">Zdobyliśmy doświadczenie dzięki <strong>współpracy z kilkudziesięcioma firmami</strong> z branży produkcynej, magazynowej, logistycznej, edukacyjnej czy administracyjno-biurowej. Dzięki <strong>kilkunastoletniej praktyce</strong> mamy ogromną wiedzę i praktyczne umiejętności.</p>
-                        <div><Link to='/about' className="btn">Więcej o firmie</Link></div>
+                        <p className="text2 text__white">Zdobyliśmy doświadczenie dzięki <strong>współpracy z kilkudziesięcioma firmami</strong> z branży produkcyjnej, magazynowej, logistycznej, edukacyjnej czy administracyjno-biurowej. Dzięki <strong>kilkunastoletniej praktyce</strong> mamy ogromną wiedzę i praktyczne umiejętności.</p>
+                        <div><Link to='/about' className="btn text__white">Więcej o firmie</Link></div>
                     </div>
                 </div>
             </section>
@@ -102,12 +103,30 @@ const Home = () => {
                         <div className={style.offer__textContainer}>
                             <h1 className="text1">Czym się zajmujemy?</h1>
                             <div className="line"></div>
-                            <p className="text2 text__white">Organizujemy <strong>szkolenia BHP stacjonarne</strong> oraz <strong>on-line (e-szkolenia)</strong>. Świadczymy usługi w zakresie <strong>bezpieczeństwa i higieny pracy</strong>, ochrony przeciwpożarowej i szkoleń w zakresie pierwszej pomocy.</p>
-                            <div><Link to='/offer' className="btn text__white">Pełna oferta</Link></div>
+                            <p className="text2">Organizujemy <strong>szkolenia BHP stacjonarne</strong> oraz <strong>on-line (e-szkolenia)</strong>. Świadczymy usługi w zakresie <strong>bezpieczeństwa i higieny pracy</strong>, ochrony przeciwpożarowej i szkoleń w zakresie pierwszej pomocy.</p>
+                            <div><Link to='/offer' className="btn">Pełna oferta</Link></div>
                         </div>
                     </div>
                     <figure data-aos="fade-left" className={style.offer__figure}>
                         <img className={style.offer__img} src={home__offer} alt="bhp" />
+                    </figure>
+                </div>
+            </section>
+
+
+            {/*section ETRAINING*/}
+            <section className={style.etraining}>
+                <div className={style.etraining__container}>
+                    <div className={style.etraining__text}>
+                        <div className={style.etraining__textContainer}>
+                            <h1 className="text1 text__shadow">Czemu e-szkolenia?</h1>
+                            <div className="line"></div>
+                            <p className="text2">Możesz <strong>zaoszczędzić czas i pieniądze dzięki naszym e-szkoleniom</strong>. Są dostępne 7/24. Masz do nich dostęp z każdego urządzenia za pomocą przeglądarki internetowej. Testy są wypełniane online a certyfikaty wysyłane pocztą.</p>
+                            <div><Link to='/etraining' className="btn">Zobacz E-szkolenia</Link></div>
+                        </div>
+                    </div>
+                    <figure data-aos="fade-up" className={style.etraining__figure}>
+                        <img className={style.etraining__img} src={home_etraining} alt="bhp" />
                     </figure>
                 </div>
             </section>
@@ -122,7 +141,7 @@ const Home = () => {
                     <div className={style.knowledge__textContainer}>
                         <h1 className="text1">Dlaczego jesteśmy wyjątkowi?</h1>
                         <div className="line"></div>
-                        <p className="text2"><strong>Bezpłatnie</strong> dzielimy się zdobytą wiedzą. Na naszym portalu znajdziesz <strong>specjalistyczną więdzę</strong> dotyczącą wszystkich dziedzin związanych z BHP. Nie musisz szukać informacji w innych miejscach! Tu znajdziesz <strong>wszystkie informacje dotyczące BHP</strong>. Przekazujemy wiedzę w wsposób przystępny, uporzadkowany i bezpłatny.</p>
+                        <p className="text2"><strong>Bezpłatnie</strong> dzielimy się zdobytą wiedzą. Na naszym portalu znajdziesz <strong>specjalistyczną wiedzę</strong> dotyczącą wszystkich dziedzin związanych z BHP. Nie musisz szukać informacji w innych miejscach! Tu znajdziesz <strong>wszystkie informacje dotyczące BHP</strong>. Przekazujemy wiedzę w sposób przystępny, uporządkowany i bezpłatny.</p>
                         <div><Link to='/knowledge' className="btn">Baza wiedzy</Link></div>
                     </div>
                 </div>
@@ -137,7 +156,7 @@ const Home = () => {
                     <div data-aos="flip-left" className={style.news__textContainer}>
                         <h1 className="text1">Jak być na bieżąco z BHP?</h1>
                         <div className="line"></div>
-                        <p className="text2">Jesteśmy na bierząco i od razu <strong>informujemy o zmianach w prawie</strong> dotyczących BHP. Regularnie zamieszczamy nowe informacje, które pojawiają się w branży. Informujemy o <strong>najnowszych aktach prawnych</strong> i datach ich wejścia w życie. </p>
+                        <p className="text2">Jesteśmy na bieżąco i od razu <strong>informujemy o zmianach w prawie</strong> dotyczących BHP. Regularnie zamieszczamy nowe informacje, które pojawiają się w branży. Informujemy o <strong>najnowszych aktach prawnych</strong> i datach ich wejścia w życie. </p>
                         <div><Link to='/news' className="btn">Zobacz nowości</Link></div>
                     </div>
                     <figure className={style.news__figure2}>

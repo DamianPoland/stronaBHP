@@ -1,7 +1,6 @@
 {
   "hosting": {
     "public": "build",
-    "site": "studio-sferabhp",
     "ignore": [
       "firebase.json",
       "**/.*",

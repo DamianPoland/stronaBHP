@@ -33,7 +33,7 @@ const About = () => {
                             <div className="textContainer">
                                 <h1 className="text1">Kim jesteśmy?</h1>
                                 <div className="line"></div>
-                                <p className="text2"><span className={style.text__bigLeter}>J</span>esteśmy firmą, która ma swoją siedzibę w Gdyni. Wcześniej działaliśmy równiesz na rynku Warszawskim. Dzięki platformie e-lerningowej oraz szkolenion on-line chętnie podejmujemy współpracę z firmami z całej Polski.</p>
+                                <p className="text2"><span className={style.text__bigLeter}>J</span>esteśmy firmą, która ma swoją siedzibę w Gdyni. Wcześniej działaliśmy również na rynku Warszawskim. Dzięki platformie e-learningowej oraz szkoleniom on-line chętnie podejmujemy współpracę z firmami z całej Polski.</p>
                                 <p className="text2"><span className={style.text__bigLeter}>W</span>ielu klientów ceni sobie nasze indywidualne podejście oraz profesjonalizm. Staramy się przedstawić tematy dotyczące BHP w sposób interesujący i przystępny.</p>
                             </div>
                         </div>
@@ -50,7 +50,7 @@ const About = () => {
                             <div className="textContainer">
                                 <h1 className="text1">Dlaczego my?</h1>
                                 <div className="line"></div>
-                                <p className="text2"><span className={style.text__bigLeter}>D</span>działamy w branży BHP już od kilkunastu lat. Wspieramy firmy z branży produkcynej, magazynowej, logistycznej, edukacyjnej i administracyjno-biurowej. Naszą wiedzą dzielimy się nieodpłatnie.</p>
+                                <p className="text2"><span className={style.text__bigLeter}>D</span>ziałamy w branży BHP już od kilkunastu lat. Wspieramy firmy z branży produkcyjnej, magazynowej, logistycznej, edukacyjnej i administracyjno-biurowej. Naszą wiedzą dzielimy się nieodpłatnie.</p>
                                 <p className="text2"><span className={style.text__bigLeter}>O</span>rganizujemy e-szkolenia BHP, w postaci bloków tematycznych dostosowanych do potrzeb konkretnych firm. Do każdej współpracy podchodzimy indywidualnie.</p>
 
                             </div>

@@ -140,8 +140,8 @@ const Contact = () => {
                             <p className={style.contacts__desc}>biuro@stronaBHP.pl</p>
                         </div>
                         <div className={style.contacts__item}  >
-                            <a href='https://www.fb.me/AplikacjeIStronyInternetowe' target='_blank' rel="noopener noreferrer" className={style.svg}><Facebbok /></a>
-                            <p className={style.contacts__desc}>@AplikacjeIStronyInternetowe</p>
+                            <a href='/' className={style.svg}><Facebbok /></a>
+                            <p className={style.contacts__desc}>Facebook</p>
                         </div>
                         <div className={style.contacts__item} >
                             <a href='/' className={style.svg}><Clock /></a>

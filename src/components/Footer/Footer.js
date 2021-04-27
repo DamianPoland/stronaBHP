@@ -56,7 +56,7 @@ const Footer = () => {
                                 <p className={style.desc__contactItemText}>Email</p>
                             </a>
 
-                            <a href='https://www.fb.me/AplikacjeIStronyInternetowe' target='_blank' rel="noopener noreferrer" className={style.desc__contactItem}>
+                            <a href='/' className={style.desc__contactItem}>
                                 <Facebbok className={style.desc__contactItemSvg} />
                                 <p className={style.desc__contactItemText}>Facebbok</p>
                             </a>
