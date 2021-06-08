@@ -8,6 +8,7 @@ import about_gdynia from '../../assets/about_gdynia.jpg'
 import knowledge from '../../assets/knowledge.jpg'
 
 
+
 const About = () => {
 
     // scroll to top when componene render
