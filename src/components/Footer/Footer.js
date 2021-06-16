@@ -41,7 +41,7 @@ const Footer = () => {
 
                         <div className={style.desc__contact}>
 
-                            <a href='tel:+48883305348' className={style.desc__contactItem}>
+                            <a href='tel:+48690790925' className={style.desc__contactItem}>
                                 <Phone className={style.desc__contactItemSvg} />
                                 <p className={style.desc__contactItemText}>Telefon</p>
                             </a>

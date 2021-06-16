@@ -176,9 +176,9 @@ const Home = () => {
                             </p>
 
                         <p className={style.contact__tel}>
-                            <a href='tel:+48100100100' className={style.contact__telIcon}>
+                            <a href='tel:+48690790925' className={style.contact__telIcon}>
                                 <Phone />
-                            </a> +48 100-100-100
+                            </a> +48 690-790-925
                             </p>
                         <div><Link to='/contact' className="btn">Pozostałe formy kontaktu</Link></div>
                     </div>

@@ -128,8 +128,8 @@ const Contact = () => {
                 <section className={style.contacts}>
                     <div className={style.contacts__container}>
                         <div className={style.contacts__item}>
-                            <a href='tel:+48883305348' className={style.svg}><Phone /></a>
-                            <p className={style.contacts__desc}>+48 883-305-348</p>
+                            <a href='tel:+48690790925' className={style.svg}><Phone /></a>
+                            <p className={style.contacts__desc}>+48 690-790-925</p>
                         </div>
                         <div className={style.contacts__item}>
                             <a href={`http://maps.google.com/?q=Reda Garncarska 11/c37`} target='_blank' rel="noopener noreferrer" className={style.svg}><Location /></a>
